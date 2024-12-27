@@ -89,8 +89,8 @@
 2. 克隆本仓库内的 `docker-compose.yml` 和 `demo.env` 文件：
 
    ```bash
-   curl -O https://raw.githubusercontent.com/MuChengZJU/Blog/master/docker-compose.yml
-   curl -O https://raw.githubusercontent.com/MuChengZJU/Blog/master/demo.env
+   curl -O https://raw.githubusercontent.com/MuChengZJU/MDVSBlog/master/docker-compose.yml
+   curl -O https://raw.githubusercontent.com/MuChengZJU/MDVSBlog/master/demo.env
    ```
 
 3. 复制 `demo.env` 文件为 `.env` 文件，并根据需要修改其中的环境变量，在文件中有对应说明。
@@ -110,7 +110,7 @@
 
 找一个合适的地方，悄悄地把项目克隆到本地：
 ```bash
-git clone https://github.com/MuChengZJU/Blog.git
+git clone https://github.com/MuChengZJU/MDVSBlog.git
 ```
 或者用你喜欢的方式把代码扒下来 :)
 
