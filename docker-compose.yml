@@ -1,0 +1,41 @@
+version: "3.8"
+services:
+        backend:
+                build:
+                        context: .
+                        dockerfile: Dockerfile
+                ports:
+                        - "${SERVER_PORT}:${SERVER_PORT}"
+                environment:
+                        SPRING_DATASOURCE_URL: ${SPRING_DATASOURCE_URL}
+                        SPRING_DATASOURCE_USERNAME: ${SPRING_DATASOURCE_USERNAME}
+                        SPRING_DATASOURCE_PASSWORD: ${SPRING_DATASOURCE_PASSWORD}
+                        SERVER_PORT: ${SERVER_PORT}
+                        JWT_SECRET: ${JWT_SECRET}
+                        ADMIN_USERNAME: ${ADMIN_USERNAME}
+                        ADMIN_PASSWORD: ${ADMIN_PASSWORD}
+                depends_on:
+                        - db
+
+        frontend:
+                build:
+                        context: ./blog-frontend
+                        dockerfile: Dockerfile
+                ports:
+                        - "9091:80"
+
+        db:
+                image: mysql:8
+                container_name: mysql
+                restart: always
+                environment:
+                        MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+                        MYSQL_DATABASE: ${MYSQL_DATABASE}
+                        TZ: "Asia/Shanghai"
+                ports:
+                        - "3307:3306"
+                volumes:
+                        - db_data:/var/lib/mysql
+
+volumes:
+        db_data:
