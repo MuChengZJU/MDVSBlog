@@ -476,6 +476,35 @@ git clone https://github.com/MuChengZJU/Blog.git
 
 ---
 
+## 未来计划 / TODO
+
+### 1. Features to Add
+- [ ] 文章的网友评论
+- [ ] 照片墙
+- [ ] 个人简历页面
+
+### 2. Refactoring / Improvements
+- [ ] 环境变量配置优化，支持更多配置项
+- [ ] 优化前端的分辨率适配
+
+### 3. Testing
+- [ ] 单元测试和集成测试。
+
+### 4. Documentation
+- [ ] 完善代码注释
+
+### 5. Deployment
+- [ ] 配置 CI/CD 流程。
+
+
+---
+
+**Legend**:
+- [x] 创建了未来计划
+
+
+---
+
 ## 贡献指南
 
 欢迎贡献代码或提出建议！
