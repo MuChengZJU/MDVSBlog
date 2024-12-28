@@ -14,6 +14,8 @@
     - [Docker 部署](#docker-部署)
 - [功能展示](#功能展示)
 - [代码解析](#代码解析)
+- [历史进程](#历史进程)
+- [未来计划 / TODO](#未来计划--todo)
 - [贡献指南](#贡献指南)
 - [许可证](#许可证)
 
@@ -89,8 +91,8 @@
 2. 克隆本仓库内的 `docker-compose.yml` 和 `demo.env` 文件：
 
    ```bash
-   curl -O https://raw.githubusercontent.com/MuChengZJU/MDVSBlog/master/docker-compose.yml
-   curl -O https://raw.githubusercontent.com/MuChengZJU/MDVSBlog/master/demo.env
+   curl -O https://raw.githubusercontent.com/MuChengZJU/MDVSBlog/main/docker-compose.yml
+   curl -O https://raw.githubusercontent.com/MuChengZJU/MDVSBlog/main/demo.env
    ```
 
 3. 复制 `demo.env` 文件为 `.env` 文件，并根据需要修改其中的环境变量，在文件中有对应说明。
@@ -476,6 +478,15 @@ git clone https://github.com/MuChengZJU/MDVSBlog.git
 
 ---
 
+## 历史进程
+
+由于之前把敏感信息放在了代码里，所以之前的仓库不公开了，把环境变量放在了 `.env` 文件里之后新开了这个仓库并公开。
+
+芝士之前的 Git Commit 记录：
+![8_GitGraph1.png](docs/images/8_GitGraph1.png)
+![9_GitGraph2.png](docs/images/9_GitGraph2.png)
+---
+
 ## 未来计划 / TODO
 
 ### 1. Features to Add
@@ -492,6 +503,7 @@ git clone https://github.com/MuChengZJU/MDVSBlog.git
 
 ### 4. Documentation
 - [ ] 完善代码注释
+- [ ] 简单自定义配置说明
 
 ### 5. Deployment
 - [ ] 配置 CI/CD 流程。
